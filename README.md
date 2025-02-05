@@ -1,13 +1,18 @@
 # kali_dockerizado_rdp
 
-Construye la imagen:
+1. Construye la imagen:
 
 docker build -t kali-xrdp .
 
-Ejecuta el contenedor:
+2. Ejecuta el contenedor:
 
-docker run -d -p 3389:3389 kali-xrdp
+docker run -d -p 3389:3389 5432:5432 kali-xrdp
 
-Credenciales de acceso al RDP:
+3. Credenciales de acceso al RDP:
 usuario: kali
 contraseña: kali
+
+Si se quiere instalar todas las herramientas se debe ejecutar en la terminal dentro de kali lo siguiente:
+
+apt install kali-linux-headless -y
+

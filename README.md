@@ -12,7 +12,9 @@ docker run -d -p 3389:3389 5432:5432 kali-xrdp
 usuario: kali
 contraseña: kali
 
-Si se quiere instalar todas las herramientas se debe ejecutar en la terminal dentro de kali lo siguiente:
 
-apt install kali-linux-headless -y
+NOTA:
 
+Para levantar el contenedor ejecutar:
+
+sudo docker start kali
